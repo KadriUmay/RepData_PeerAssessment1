@@ -11,7 +11,7 @@ library(ggplot2)
 
 ### Loading and process the data
 ```{r}
-setwd("C:\\Users\\kadriu\\Documents\\Rdata\\Coursera")
+setwd("C:\\Coursera")
 data <- read.csv("activity.csv", colClasses = c("integer", "Date", "factor"))
 data$month <- as.numeric(format(data$date, "%m"))
 summary(data)
